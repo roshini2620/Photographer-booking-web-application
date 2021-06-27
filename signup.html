@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <title>Sign up | Vividsnaps Studio</title>
+    <meta charset="utf-8">
+    <!-- <title>Transparent Login Form UI</title> -->
+    <link rel="stylesheet" href="trans.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="content">
+          <header>Signup</header>
+          <div class="signup">
+          <a href="#"></a>
+              
+    <form method="post" action="signup.php">
+        
+        <div class="field space">
+            <span class="fa fa-user"></span>
+            <input type="text" name="username" required placeholder="Name">
+          </div>
+        
+          <div class="field space">
+            <span class="fa fa-envelope"></span>
+            <input type="text" name="email" required placeholder="Email">
+          </div>
+        
+        <div class="field space">
+            <span class="fa fa-phone"></span>
+            <input type="tel" name="phoneno" required placeholder="phonenumber">
+          </div>
+        
+        <div class="field space">
+            <span class="fa fa-unlock-alt"></span>
+            <input type="password" name="password" class="pass-key" required placeholder="Password">
+            <span class="show">SHOW</span>
+          </div>
+        <div class="field space">
+             <input type="submit" value="SIGNUP">
+            
+         </div>
+</form>
+              <div class="login">
+Already have an account?
+          <a href="login.html">Login here</a>
+    </div>
+    
+        </div>
+</div>
+</div>
+<script>
+      const pass_field = document.querySelector('.pass-key');
+      const showBtn = document.querySelector('.show');
+      showBtn.addEventListener('click', function(){
+       if(pass_field.type === "password"){
+         pass_field.type = "text";
+         showBtn.textContent = "HIDE";
+         showBtn.style.color = "#3498db";
+       }else{
+         pass_field.type = "password";
+         showBtn.textContent = "SHOW";
+         showBtn.style.color = "#222";
+       }
+      });
+    </script>
+  </body>
+</html>

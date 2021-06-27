@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking | Vividsnaps Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bookstyle.css">
+  <link href="https://fonts.googleapis.com/css?family=italics:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <div class="cont">
+      <h1>Vividsnaps Studio</h1>
+    <div class="form sign-in">
+        <h2>Book your events</h2>
+        <form method="POST" action="booking.php">  
+        <span>User Name</span>
+        <input type="text" name="User_name" required>
+     
+        <span>email</span>
+        <input type="text" name="email" required>
+     
+ 
+        <span>Event date</span>
+        <input type="date" name="date">
+        <span>Name of the event</span>
+        <input type="textfield" name="name_of_the_event" required>
+     
+        <span>Address of the event</span>
+        <input type="textfield" name="address" required><br>
+           
+        <span>Select the Services &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+         <select id="services" name="services" required>
+		    <option value="select the service">Select the services</option>
+            <option value="Photography">Photography</option>
+            <option value="Videography">Videography</option>
+            <option value="Photography and Videography">Photography and Videography</option>
+        </select>
+           
+            <span><br><br>Select the Package &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+         <select id="package" name="package" required>
+		    <option value="select the package">Select the package</option>
+            <option value="Heritage">Heritage(above 100000)</option>
+            <option value="Moderate">Moderate(50,000-1,00,000)</option>
+            <option value="Low">Low(25,000-50,000)</option><br>
+        </select>
+     
+     
+      <button type="submit" class="submit" onclick="">Book</button>
+     
+        </form>
+		
+
+    </div>
+
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+         
+        </div>
+        <div class="img-text m-in">
+            
+         
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
